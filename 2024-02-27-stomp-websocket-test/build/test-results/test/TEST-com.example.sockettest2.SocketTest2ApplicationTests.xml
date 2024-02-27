@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.sockettest2.SocketTest2ApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-02-27T09:00:10" hostname="gimgangmin-ui-MacBookPro.local" time="0.384">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.example.sockettest2.SocketTest2ApplicationTests" time="0.384"/>
+  <system-out><![CDATA[18:00:10.203 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.sockettest2.SocketTest2ApplicationTests]: SocketTest2ApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:00:10.241 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.sockettest2.SocketTest2Application for test class com.example.sockettest2.SocketTest2ApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.3)
+
+2024-02-27T18:00:10.398+09:00  INFO 40711 --- [    Test worker] c.e.s.SocketTest2ApplicationTests        : Starting SocketTest2ApplicationTests using Java 17.0.7 with PID 40711 (started by amazon in /Users/amazon/lunch/spring/socket-test2)
+2024-02-27T18:00:10.399+09:00  INFO 40711 --- [    Test worker] c.e.s.SocketTest2ApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2024-02-27T18:00:10.870+09:00  INFO 40711 --- [    Test worker] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2024-02-27T18:00:10.871+09:00  INFO 40711 --- [    Test worker] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@270a620]]
+2024-02-27T18:00:10.871+09:00  INFO 40711 --- [    Test worker] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2024-02-27T18:00:10.878+09:00  INFO 40711 --- [    Test worker] c.e.s.SocketTest2ApplicationTests        : Started SocketTest2ApplicationTests in 0.58 seconds (process running for 1.027)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
