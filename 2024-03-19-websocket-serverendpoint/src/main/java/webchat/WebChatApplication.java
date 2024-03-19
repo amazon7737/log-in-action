@@ -1,13 +1,13 @@
-package com.example.sockettest2;
+package webchat;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SocketTest2Application {
+public class WebChatApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SocketTest2Application.class, args);
+        SpringApplication.run(WebChatApplication.class, args);
     }
 
 }
