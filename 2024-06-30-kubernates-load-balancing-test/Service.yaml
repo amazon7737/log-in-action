@@ -1,0 +1,20 @@
+# https://coding-business.tistory.com/134
+# Kubernetes API version
+apiVersion: v1
+# Kubernetes resource kind
+kind: Service
+# Metadata of the resource kind
+metadata:
+  name: spring-boot-load-svc
+#서비스의 타입을 정한다.
+spec:
+  type: LoadBalancer
+  #서비스가 트래픽을 전달할 pod을 설정
+  selector:
+    app: spring-boot-load
+  #서비스의 port 설정
+  ports:
+    - protocol: TCP
+      port: 5510
+      targetPort: 5510
+      nodePort: 32000

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.example.applicationtest.ApplicationTestApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-30T08:38:48" hostname="gimgangmin-ui-MacBookPro.local" time="0.426">
+  <properties/>
+  <testcase name="contextLoads()" classname="org.example.applicationtest.ApplicationTestApplicationTests" time="0.426"/>
+  <system-out><![CDATA[17:38:48.008 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [org.example.applicationtest.ApplicationTestApplicationTests]: ApplicationTestApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:38:48.050 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration org.example.applicationtest.ApplicationTestApplication for test class org.example.applicationtest.ApplicationTestApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.1)
+
+2024-06-30T17:38:48.224+09:00  INFO 8983 --- [    Test worker] o.e.a.ApplicationTestApplicationTests    : Starting ApplicationTestApplicationTests using Java 17.0.7 with PID 8983 (started by amazon in /Users/amazon/lunch/spring/source/application-test)
+2024-06-30T17:38:48.224+09:00  INFO 8983 --- [    Test worker] o.e.a.ApplicationTestApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2024-06-30T17:38:48.675+09:00  INFO 8983 --- [    Test worker] o.e.a.ApplicationTestApplicationTests    : Started ApplicationTestApplicationTests in 0.56 seconds (process running for 1.046)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

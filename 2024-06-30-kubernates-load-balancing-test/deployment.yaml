@@ -1,0 +1,39 @@
+#해당 kubernetes 객체를 생성하는 데 사용할 Kubernetes API 버전(통신 방법 명시)
+#현재 쿠버네티스에서 공식적으로 제공하고 있는 deployment 객체에 대한 api는 apps/v1이다.
+#쿠버네티스 API의 지속적 성장과 변경이 가능하게 만든다.
+apiVersion: apps/v1
+
+#만들려는 객체의 종류 명시
+kind: Deployment
+
+#객체를 구분해주는 name, UID, namespace 정보를 지정
+metadata:
+  name: spring-boot-load
+
+spec:
+  #운영하고 싶은 복제본 수 지정
+  replicas: 2
+
+  #원하는 레플리카 수를 유지 운영하기 위해, 각 pod가 어떤 명령에 속하는 pod인지 파악해야한다.
+  #그래서 pod을 구분해주는 label을 붙이는 spec.template.metadata.labels.app
+  #와 current state를 측정하기 위해 어떤 container를 counting해야 하는지를 정하는
+  #spec.selector.matchLabels 설정
+  selector:
+    matchLabels:
+      app: spring-boot-load
+  template:
+    metadata:
+      labels:
+        app: spring-boot-load
+    spec:
+      #containers: pod에서 운영할 컨테이너 정보 명시 name image exposed port
+      containers:
+        - name: spring-boot-load
+          image: amazon7737/dockerfile:0.1
+          #imagePullPolicy는 container에 사용할 이미지를 어떻게 공급할 것인지 정한다.
+          #로컬에 있는 이미지만 사용할 것인지, 다운을 받을 것이지 옵션을 통해 정할 수 있다.
+          imagePullPolicy: Always
+          #클러스터 안에 있는 컨테이너로 통할 port를 설정
+          ports:
+            - protocol: TCP
+              containerPort: 5510
